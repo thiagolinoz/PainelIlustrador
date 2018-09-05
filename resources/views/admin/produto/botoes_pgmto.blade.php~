@@ -1,0 +1,21 @@
+<div class="form-group row">
+<label for="botao1" class="col-sm-2 control-label">{{ __('Primeiro Botao') }}</label>
+
+<div class="col-md-8 col-lg-8">
+    <textarea type="text" class="form-control" name="botao[]"></textarea>  
+</div>
+  </div>
+  <div class="form-group row">
+<label for="botao2" class="col-sm-2 control-label">{{ __('Segundo Botao') }}</label>
+
+<div class="col-md-8 col-lg-8">
+    <textarea type="text" class="form-control" name="botao[]"></textarea>  
+</div>
+  </div>
+  <div class="form-group row">
+<label for="botao3" class="col-sm-2 control-label">{{ __('Terceiro Botao') }}</label>
+
+<div class="col-md-8 col-lg-8">
+    <textarea type="text" class="form-control" name="botao[]"></textarea>  
+</div>
+  </div>

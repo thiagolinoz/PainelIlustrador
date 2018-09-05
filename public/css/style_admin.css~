@@ -1,0 +1,19 @@
+/* produto */
+
+#botoes_pgmto .group-textarea{
+	  border: 0.5px solid;
+    border-radius: 15px 50px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.close{
+	 margin: -28px;
+    border-radius: 20px;
+    border: solid;
+    display: block;
+    height: 33px;
+    width: 33px;
+    line-height: 30px;
+    text-align: center;
+}

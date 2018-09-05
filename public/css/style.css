@@ -1,0 +1,242 @@
+/*geral*/
+textarea {
+    resize: none;
+}
+
+.nav-item a{
+	font-size:25px;
+	color: #c6ceeb !important;
+}
+
+.background-home{
+	height: 600px;
+	background: url("../images/layout/marina-home2.png") no-repeat center center;
+	background-size: cover;
+}
+
+.align-redes{
+	display: flex;
+	align-items: center;
+}
+
+.logo-redes-align{
+	text-align: center;
+}
+
+.redes-sociais{
+	z-index: 10000;
+	margin-top: -30px;
+}
+
+.footer-pink{
+	background-color:	#fdbec8;
+  height: 400px;
+}
+
+.footer-pink .titulo{
+	margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.footer-pink .titulo h1{
+	margin-top: 80px;
+}
+
+.contato-footer input, .contato-footer textarea, .contato-footer button{
+	border: solid;
+	background-color: #fdbec8;
+  margin-bottom: 10px;
+}
+
+.contato-footer button{
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.contato-footer button:hover{
+	background-color: #c6ceeb;
+	color: #fff;
+}
+
+.contato-footer div{
+	text-align: center;
+  margin: 0 auto;
+}
+.navbar-toggle{
+    border: solid 1px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+/*sobre*/
+.conteudo-sobre{
+  margin-top: 20px;
+}
+
+.margin-sobre{
+	margin-top: -150px;
+}
+
+/*portfolio*/
+.imagens-portfolio{
+	margin-bottom: 30px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-sizer,.grid-item {
+	width:  33.333%;
+}	
+.grid-item {
+  float: left;
+}	
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  
+}
+.fancybox-bg {
+  background: #fff !important;
+}
+
+.fancybox-button {
+  background: #fdbec8 !important;
+  color: #000 !important;
+  transition: all .2s;
+}
+.fancybox-caption {
+	background: #fdbec8 !important;
+	color: #000 !important;
+}
+
+/*contato*/
+
+.contato-form input, .contato-form textarea{
+	margin-bottom: 25px;
+	margin-right: 40px;
+}
+
+.contato-form button{
+	 border: solid;
+    background: transparent;
+}
+
+.margin-contato{
+	margin-top: -204px;
+}
+
+/*loja*/
+
+.produto{
+	margin-bottom: 50px;
+}
+
+.lista-loja{
+	    margin-bottom: 150px;
+}
+
+.intro-loja p{
+	text-align: left;
+}
+.produto p{
+	margin-top: 25px;	
+	text-align: center;
+}
+
+.produtos a{
+   line-height: 40px;
+   color: #000;
+	text-decoration: none;
+	margin-left: 8px;
+}
+
+.imagem-loja, a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.titulo-produto{
+	height: 80px;
+	width: 200px;
+}
+
+.moldura-produto{
+	 height: 300px;
+    width: 200px;
+    border: dotted 4px #fdbec8;
+}
+
+.wrapper-botao{
+	 width: 200px;
+}
+
+.botao-loja{
+    height: 40px;
+    width: 100px;
+    background: #fdbec8;
+    border-radius: 7px;
+    margin: 0 auto;
+   
+}
+
+.produtos{
+	margin-top: 100px;
+} 
+
+.formas-title{
+	margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+.botao_pagmento form{
+	margin-bottom: 25px;
+} 
+
+.conteudo-loja{
+	margin-top: 50px;
+}
+
+/*paginator laravel*/
+.page-item.active .page-link{
+	 background-color: #c6ceeb !important;
+    border-color: #c6ceeb !important;
+    color: #fff !important;
+} 
+
+.page-link{
+	color: #c6ceeb !important;
+} 
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+  .align-redes{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .footer-pink{
+    height: 500px;
+  }
+  .grid-item {
+		position: unset !important;
+    	left: unset !important;
+    	top: unset !important;
+   }
+   .grid-sizer,.grid-item {
+		width: unset !important;
+	}
+	.redes-sociais{
+		margin-top: 0px;
+	}
+	.logo-redes-align{
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}	 	
+}
+
+

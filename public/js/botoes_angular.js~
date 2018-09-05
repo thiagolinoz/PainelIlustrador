@@ -1,0 +1,12 @@
+(function(){
+	var app = angular.module('botoes', [], function($interpolateProvider){
+		$interpolateProvider.startSymbol('<%');
+      $interpolateProvider.endSymbol('%>');	
+	});
+	
+	app.controller('CamposController', function($scope){
+		$scope.getIdMedida = function(){
+			$scope.textarea_botao = '<input type="hidden" name="medidas_id" value="'+$scope.medidas_id+'"><div class="form-group row"><label for="botao1" class="col-sm-2 control-label">Primeiro Botao</label><div class="col-md-8 col-lg-8"> <textarea type="text" class="form-control" name="botao[]"></textarea> </div></div><div class="form-group row"><label for="botao2" class="col-sm-2 control-label">Segundo Botao</label><div class="col-md-8 col-lg-8"> <textarea type="text" class="form-control" name="botao[]"></textarea> </div></div><div class="form-group row"><label for="botao3" class="col-sm-2 control-label">Terceiro Botao</label><div class="col-md-8 col-lg-8"> <textarea type="text" class="form-control" name="botao[]"></textarea> </div></div>';
+		};
+	});
+})();

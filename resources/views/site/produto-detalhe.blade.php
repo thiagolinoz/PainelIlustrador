@@ -1,0 +1,38 @@
+@extends('layouts.site')
+
+@section('content')
+<section class="imagens-portfolio">
+  <div class="container">
+    <div class="row">
+    	<div class="col-sm-12 conteudo-sobre">
+          <h1>{{$produto->titulo}}</h1>
+				<div class="row conteudo-loja">	
+					<div class="col-sm-4">               	 	
+               	<img class="img-fluid imagem-loja" src='{{ asset("images/produto/$produto->imagem")}}' width="250" height="250">
+                	 
+					</div>
+					<div class="col-sm-4">
+						<h2>Descrição</h2>               	 	
+						<p>{{$produto->descricao}}</p>
+						R$ <span class="preco">-</span>                 	 
+					</div>
+					<div class="col-sm-4">
+						<select id="medidas">
+							<option value="">Escolha uma medida</option>
+							@foreach($medidasProdutos as $m)
+								<option value="{{$m->id}}">{{array_search($m->medidas_id, $arrayMedidas)}}</option>
+							@endforeach	
+						</select>
+						<input type="hidden" name="csrf-token" content="{{ csrf_token() }}" />
+						<div class="formas-title">Formas de pagamento:</div>											
+						<div class="botao_pagmento">-</div>	
+						<div class="frete">
+							<input type="text" name="cep_cliente">
+						</div>						
+					</div>                	 
+      	</div>    	
+      </div> 	
+    </div>
+  </div>
+</section>
+@endsection 

@@ -1,0 +1,34 @@
+/* produto */
+
+#botoes_pgmto .group-textarea{
+	border: 0.5px solid;
+    border-radius: 15px 50px;
+    padding: 15px;
+    margin-bottom: 25px;
+   margin-top: 40px;
+
+}
+
+.close{
+	 margin: -28px;
+    border-radius: 20px;
+    border: solid;
+    display: block;
+    height: 33px;
+    width: 33px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.valor_medida{
+	position: absolute;
+    margin-top: -48px;
+    margin-left: -33px;
+    border: solid 0.5px;
+    border-radius: 10px;
+    display: block;
+    height: 33px;
+    width: 75px;
+    text-align: center;
+    line-height: 30px;
+}
